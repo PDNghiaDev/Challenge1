@@ -1,0 +1,247 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:background="@mipmap/bg"
+                            android:id="@+id/layoutImage">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/imgBack"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@mipmap/ic_action_back"
+                                    android:paddingTop="@dimen/activity_horizontal_ten"
+                                    android:paddingLeft="@dimen/activity_horizontal_ten" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/imgShare"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@mipmap/ic_share_white"
+                                    android:paddingTop="@dimen/activity_horizontal_ten"
+                                    android:paddingRight="@dimen/activity_horizontal_ten"/>
+
+                                <ImageView
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:id="@+id/imgTrailer"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/ic_play_trailer"/>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_below="@+id/layoutImage"
+                            android:paddingTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/title1"
+                            android:id="@+id/titleMovie1"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="@string/title2"
+                            android:id="@+id/titleMovie2"
+                            android:layout_below="@+id/titleMovie1"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/activity_horizontal_ten"
+                            android:textColor="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleMovie2"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingTop="20dp"
+                            android:id="@+id/layoutInfo">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:id="@+id/imgIMDb"
+                                            android:src="@mipmap/bg_imdb"/>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:paddingTop="5dp"
+                                            android:paddingLeft="5dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/danhgia"
+                                                    android:textSize="10sp"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="5.0"
+                                                    android:textSize="18sp"/>
+
+                                        </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:id="@+id/imgDate"
+                                            android:src="@mipmap/bg_p_date"/>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:paddingTop="5dp"
+                                            android:paddingLeft="5dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/khoichieu"
+                                                    android:textSize="10sp"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="31/07"
+                                                    android:textSize="18sp"/>
+
+                                        </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:id="@+id/imgDuration"
+                                            android:src="@mipmap/bg_duration"/>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:paddingTop="5dp"
+                                            android:paddingLeft="5dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/thoiluong"
+                                                    android:textSize="10sp"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="100P"
+                                                    android:textSize="18sp"/>
+
+                                        </LinearLayout>
+                                </LinearLayout>
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/layoutInfo"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="30dp">
+
+                        <!-- A CardView that contains a TextView -->
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_view"
+                            android:layout_gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            card_view:cardCornerRadius="10dp"
+                            card_view:cardBackgroundColor="@color/bg_card">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="15dp">
+
+                                <TextView
+                                    android:id="@+id/info_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Thể loại: 2D/Digital"
+                                    android:padding="2dp"
+                                    android:background="@color/bg_card_name"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/description"
+                                    android:paddingTop="20dp"/>
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgPlay"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_play_trailer"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>
+
+

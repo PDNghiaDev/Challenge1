@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Challenge1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="danhgia">ĐÁNH GIÁ</string>
+    <string name="khoichieu">KHỞI CHIẾU</string>
+    <string name="thoiluong">THỜI LƯỢNG</string>
+    <string name="title1">Huyền Thoại Xi Yuu</string>
+    <string name="title2">The Hero Chi You</string>
+    <string name="description">The Hero Chi You (Huyền Thoại Xi Yuu) kể về người anh hùng bộ lạc sau khi bị đánh bại bởi Hoàng Đế, anh đã rút về miền Nam và trở thành người đứng đầu bộ tộc H\'mông.
+        \nBộ phim được sản xuất bởi Đạo diễn Trương Kỷ Trung.
+        \nCùng sự góp mặt của nhiều diễn viên nổi tiếng.</string>
+
+</resources>
